@@ -1,8 +1,34 @@
-# React + Vite
+# My First React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A project demonstrating React basics:
+- How to create a React project with the command `npm create vite`.
+- How to navigate the project structure of a fresh React project, with special attention to:
+    - ./package.json
+    - ./index.html
+    - ./src/main.jsx
+    - ./src/App.jsx
+- How to create your own components.
+- How to pass data to components from a parent using **props**.
+- How to implement routing with `react-router`.
 
-Currently, two official plugins are available:
+## Installation instructions
+1. Clone this project with the command:
+```bash
+git clone https://github.com/warren-west/react-router-demo.git
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Install the necessary dependencies with the command:
+```bash
+npm install
+```
+
+3. Run the project with the command:
+```bash
+npm run dev
+```
+
+## Contributing
+@warren-west for Noroff Fagskole AS &copy;
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
