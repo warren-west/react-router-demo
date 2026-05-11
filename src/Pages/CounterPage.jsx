@@ -1,8 +1,12 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { CounterContext } from '../Context/CounterProvider'
+import WithAuth from '../Auth/WithAuth'
 
 function CounterPage() {
     // Hooks:
-    const [count, setCount] = useState(0)
+    // replace this with lifted state (useContext)
+    // const [count, setCount] = useState(0)
+    const [count, setCount] = useContext(CounterContext)
 
     // Handlers:
     function incrementCounter() {

@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar'
 import HomePage from './Pages/HomePage'
 import CounterPage from './Pages/CounterPage'
 import InstructionsPage from './Pages/InstructionsPage'
+import CounterProvider from './Context/CounterProvider'
+import UserProvider from './Context/UserProvider'
 
 // 2. Create a function that returns JSX:
 // The <App /> component:
@@ -14,12 +16,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={ <HomePage /> } />
-          <Route path='/counter' element={ <CounterPage /> } />
-          <Route path='/instructions' element={ <InstructionsPage /> } />
-        </Routes>
+        <UserProvider>
+          <CounterProvider>
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/counter' element={<CounterPage />} />
+              <Route path='/instructions' element={<InstructionsPage />} />
+            </Routes>
+          </CounterProvider>
+        </UserProvider>
       </BrowserRouter>
     </>
   )

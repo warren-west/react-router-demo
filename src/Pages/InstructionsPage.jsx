@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Instruction from '../Components/Instruction'
+import WithAuth from '../Auth/WithAuth'
 
 function InstructionsPage() {
     // Hooks:
@@ -38,4 +39,4 @@ function InstructionsPage() {
     )
 }
 
-export default InstructionsPage
+export default WithAuth(InstructionsPage)
