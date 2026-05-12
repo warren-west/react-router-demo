@@ -18,7 +18,7 @@ function Navbar() {
                 <NavLink to="/"><li>Home</li></NavLink>
                 <NavLink to="/instructions"><li>Instructions</li></NavLink>
                 <NavLink to="/counter"><li>Counter ({count})</li></NavLink>
-                <NavLink to="/dashboard"><li>{user}</li></NavLink>
+                <NavLink to="/profile"><li>{user}</li></NavLink>
                 <button onClick={handleLogin}>Login</button>
             </ul>
         </nav>

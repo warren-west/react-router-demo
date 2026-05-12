@@ -7,6 +7,7 @@ import CounterPage from './Pages/CounterPage'
 import InstructionsPage from './Pages/InstructionsPage'
 import CounterProvider from './Context/CounterProvider'
 import UserProvider from './Context/UserProvider'
+import ProfilePage from './Pages/ProfilePage'
 
 // 2. Create a function that returns JSX:
 // The <App /> component:
@@ -23,6 +24,7 @@ function App() {
               <Route path='/' element={<HomePage />} />
               <Route path='/counter' element={<CounterPage />} />
               <Route path='/instructions' element={<InstructionsPage />} />
+              <Route path='/profile' element={<ProfilePage />} />
             </Routes>
           </CounterProvider>
         </UserProvider>

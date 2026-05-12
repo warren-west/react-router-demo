@@ -8,7 +8,6 @@ function HomePage() {
         setMessage("The string value has changed")
     }
 
-
     return (
         <>
             <h1>Home page</h1>

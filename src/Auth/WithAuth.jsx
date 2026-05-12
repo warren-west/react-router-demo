@@ -4,7 +4,7 @@ import { UserContext } from "../Context/UserProvider"
 
 const WithAuth = Component => props => {
     // 7. (continued from ../Context/UserProvider.jsx)
-    // Use the useContex() hook, with the imported UserContext context.
+    // Use the useContext() hook, with the imported UserContext context.
     const [user, ] = useContext(UserContext)
 
     // check if user is logged in
